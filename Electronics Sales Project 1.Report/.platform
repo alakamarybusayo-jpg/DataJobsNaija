@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Electronics Sales Project 1"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "244b87d0-f78c-41f5-98af-4f5dae1d6a05"
+  }
+}

@@ -1,0 +1,614 @@
+{
+  "compatibilityLevel": 1600,
+  "model": {
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Sales_Details\"]"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "f6cbb615-3f89-f541-e171-7a48502f1685",
+        "fromColumn": "Order Date",
+        "fromTable": "Sales_Details",
+        "toColumn": "Date",
+        "toTable": "Date Table"
+      }
+    ],
+    "sourceQueryCulture": "en-NG",
+    "tables": [
+      {
+        "name": "Sales_Details",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Order ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "753c30da-b22d-4abe-9aab-dc40c4fb670e",
+            "sourceColumn": "Order ID",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "Order Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "6cb0a0a2-ae76-4861-b926-0b4005f14e74",
+            "sourceColumn": "Order Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Unit Cost",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NG\"}"
+              }
+            ],
+            "dataType": "decimal",
+            "formatString": "\"₦\"#,0.###############;-\"₦\"#,0.###############;\"₦\"#,0.###############",
+            "lineageTag": "10e99a82-0330-4575-b776-c8ab40face52",
+            "sourceColumn": "Unit Cost",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Price",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NG\"}"
+              }
+            ],
+            "dataType": "decimal",
+            "formatString": "\"₦\"#,0.###############;-\"₦\"#,0.###############;\"₦\"#,0.###############",
+            "lineageTag": "72511699-8139-4a47-b53b-08abf7feac68",
+            "sourceColumn": "Price",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Order Qty",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "1cc4bbe1-d157-4428-89ba-0cb73eb635e2",
+            "sourceColumn": "Order Qty",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Sales",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NG\"}"
+              }
+            ],
+            "dataType": "decimal",
+            "formatString": "\"₦\"#,0.###############;-\"₦\"#,0.###############;\"₦\"#,0.###############",
+            "lineageTag": "9bd8d6c5-f111-475e-9759-6e4dfacad990",
+            "sourceColumn": "Sales",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Channel",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "01d1a651-a18e-4095-a8c4-e336b4eabeb5",
+            "sourceColumn": "Channel",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Promotion Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "164c4046-0b54-48d5-a9ae-b459427a5206",
+            "sourceColumn": "Promotion Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Product Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0a7558f9-ef20-410c-9978-df1833a48791",
+            "sourceColumn": "Product Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Product Sub Category",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c7e9917b-3acb-4712-bcf2-7b4b352d3dfd",
+            "sourceColumn": "Product Sub Category",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Product Category",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2c7900c4-7ec2-41f2-a64f-a38acc9dc6bd",
+            "sourceColumn": "Product Category",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "State",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataCategory": "StateOrProvince",
+            "dataType": "string",
+            "lineageTag": "d3a641c7-d688-4e0a-84f1-5c44d4c43fe6",
+            "sourceColumn": "State",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Zone",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataCategory": "Country",
+            "dataType": "string",
+            "lineageTag": "3a7b245b-329e-4325-9add-632e40343a87",
+            "sourceColumn": "Zone",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "COGS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NG\"}"
+              }
+            ],
+            "dataType": "decimal",
+            "formatString": "\"₦\"#,0.###############;-\"₦\"#,0.###############;\"₦\"#,0.###############",
+            "lineageTag": "8db6c48e-ca6c-465f-965a-c3e3e25320b1",
+            "sourceColumn": "COGS",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "3f83ffcf-49c5-474b-9cfa-3467550e03cb",
+        "partitions": [
+          {
+            "name": "Sales_Details",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\MARY ALAKA\\Downloads\\Electronic Sales.xlsx\"), null, true),",
+                "    Sales_Details_Sheet = Source{[Item=\"Sales_Details\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(Sales_Details_Sheet, [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Order ID\", Int64.Type}, {\"Order Date\", type date}, {\"Unit Cost\", Currency.Type}, {\"Price\", Currency.Type}, {\"Order Qty\", Int64.Type}, {\"Sales\", Currency.Type}, {\"Channel\", type text}, {\"Promotion Name\", type text}, {\"Product Name\", type any}, {\"Product Sub Category\", type text}, {\"Product Category\", type text}, {\"State\", type text}, {\"Zone\", type text}}),",
+                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Changed Type\",\"70\",\"Unknown\",Replacer.ReplaceText,{\"Promotion Name\"}),",
+                "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Replaced Value\",\"60\",\"Unknown\",Replacer.ReplaceText,{\"Promotion Name\"}),",
+                "    #\"Replaced Value2\" = Table.ReplaceValue(#\"Replaced Value1\",\"85\",\"Unknown\",Replacer.ReplaceText,{\"Promotion Name\"}),",
+                "    #\"Replaced Value3\" = Table.ReplaceValue(#\"Replaced Value2\",\"35\",\"Unknown\",Replacer.ReplaceText,{\"Promotion Name\"}),",
+                "    #\"Replaced Value4\" = Table.ReplaceValue(#\"Replaced Value3\",\"80\",\"Unknown\",Replacer.ReplaceText,{\"Promotion Name\"}),",
+                "    #\"Replaced Value5\" = Table.ReplaceValue(#\"Replaced Value4\",\"State\",\"Unknown\",Replacer.ReplaceText,{\"Channel\"}),",
+                "    #\"Replaced Value6\" = Table.ReplaceValue(#\"Replaced Value5\",\"Berlin\",\"Unknown\",Replacer.ReplaceText,{\"Channel\"}),",
+                "    #\"Replaced Value7\" = Table.ReplaceValue(#\"Replaced Value6\",\"Seattle\",\"Unknown\",Replacer.ReplaceText,{\"Channel\"}),",
+                "    #\"Replaced Value8\" = Table.ReplaceValue(#\"Replaced Value7\",\"Paris\",\"Unknown\",Replacer.ReplaceText,{\"Channel\"}),",
+                "    #\"Replaced Value9\" = Table.ReplaceValue(#\"Replaced Value8\",\"Tokyo\",\"Unknown\",Replacer.ReplaceText,{\"Channel\"}),",
+                "    #\"Replaced Value10\" = Table.ReplaceValue(#\"Replaced Value9\",\"Revenue\",\"Unknown\",Replacer.ReplaceText,{\"Promotion Name\"}),",
+                "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Replaced Value10\",{{\"Product Name\", type text}}),",
+                "    #\"Replaced Value11\" = Table.ReplaceValue(#\"Changed Type1\",\"Expense\",\"Unknown\",Replacer.ReplaceText,{\"Product Name\"}),",
+                "    #\"Replaced Value12\" = Table.ReplaceValue(#\"Replaced Value11\",\"20\",\"Unknown\",Replacer.ReplaceText,{\"Product Name\"}),",
+                "    #\"Replaced Value13\" = Table.ReplaceValue(#\"Replaced Value12\",\"40\",\"Unknown\",Replacer.ReplaceText,{\"Product Name\"}),",
+                "    #\"Replaced Value14\" = Table.ReplaceValue(#\"Replaced Value13\",\"55\",\"Unknown\",Replacer.ReplaceText,{\"Product Name\"}),",
+                "    #\"Replaced Value15\" = Table.ReplaceValue(#\"Replaced Value14\",\"60\",\"Unknown\",Replacer.ReplaceText,{\"Product Name\"}),",
+                "    #\"Inserted Multiplication\" = Table.AddColumn(#\"Replaced Value15\", \"Multiplication\", each [Unit Cost] * [Order Qty], Currency.Type),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Inserted Multiplication\",{{\"Multiplication\", \"COGS\"}}),",
+                "    #\"Reordered Columns\" = Table.ReorderColumns(#\"Renamed Columns\",{\"Order ID\", \"Order Date\", \"Unit Cost\", \"Price\", \"COGS\", \"Order Qty\", \"Sales\", \"Channel\", \"Promotion Name\", \"Product Name\", \"Product Sub Category\", \"Product Category\", \"State\", \"Zone\"})",
+                "in",
+                "    #\"Reordered Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Date Table",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "9ebdee3e99284f65bea25278761f89bb"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isDataTypeInferred": true,
+            "isKey": true,
+            "isNameInferred": true,
+            "lineageTag": "3c9b71b3-bb6d-43ea-a7bf-f69c92a377d2",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataType": "int64",
+            "expression": "YEAR('Date Table'[Date])",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "lineageTag": "c6932e08-5851-4d1d-a3f7-52b64be09459",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": "FORMAT(('Date Table'[Date]),\"mmm\")",
+            "isDataTypeInferred": true,
+            "lineageTag": "9c731c63-b1c0-47b2-8e2f-b30ec96c42ff",
+            "sortByColumn": "MonthNumber",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": "FORMAT(('Date Table'[Date]),\"ddd\")",
+            "isDataTypeInferred": true,
+            "lineageTag": "925b3d65-12a5-4e29-bd91-06484c54b2ce",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": "\"Q\" & QUARTER('Date Table'[Date])",
+            "isDataTypeInferred": true,
+            "lineageTag": "3a06f9ab-6872-4530-b297-880c93edd11a",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNumber",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "expression": "MONTH('Date Table'[Date])",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "lineageTag": "73c55893-5450-4c58-a1aa-42d35c46b3a4",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": "FORMAT('Date Table'[Date], \"MMM yyyy\")",
+            "isDataTypeInferred": true,
+            "lineageTag": "f8a750a3-6346-41d6-a755-ec4375a55ef2",
+            "sortByColumn": "Month Year Sort",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month Year Sort",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "expression": [
+              "",
+              "YEAR('Date Table'[Date]) * 100 + MONTH('Date Table'[Date])",
+              ""
+            ],
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "lineageTag": "eb837115-3a51-4c20-9434-2f9ef662f1f6",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "dataCategory": "Time",
+        "lineageTag": "7cedb4c1-ccee-4b18-b19e-f3710b365caf",
+        "partitions": [
+          {
+            "name": "Date Table",
+            "mode": "import",
+            "source": {
+              "expression": "CALENDARAUTO()",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Measures Table",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "6635f997090f474fa0e7e8f488645c5f"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Measure",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "77252a9f-6ff9-434f-8e9f-1af888c451ed",
+            "sourceColumn": "[Measure]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          }
+        ],
+        "lineageTag": "9582dcf7-c6ad-489c-8e80-2b3ee53028e2",
+        "measures": [
+          {
+            "name": "Total Sales",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NG\"}"
+              }
+            ],
+            "expression": "SUM(Sales_Details[Sales])",
+            "formatString": "\"₦\"#,0.###############;-\"₦\"#,0.###############;\"₦\"#,0.###############",
+            "lineageTag": "855d10cd-ef9f-4528-b813-bfe1bdda750a"
+          },
+          {
+            "name": "Total Cost",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NG\"}"
+              }
+            ],
+            "expression": "SUM(Sales_Details[COGS])",
+            "formatString": "\"₦\"#,0.###############;-\"₦\"#,0.###############;\"₦\"#,0.###############",
+            "lineageTag": "20ac14a7-b613-4a31-b38e-9ef7b6aebf83"
+          },
+          {
+            "name": "Profit",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NG\"}"
+              }
+            ],
+            "expression": "[Total Sales] - [Total Cost]",
+            "formatString": "\"₦\"#,0.###############;-\"₦\"#,0.###############;\"₦\"#,0.###############",
+            "lineageTag": "2b492123-f8a1-45e0-8349-439ee875f2d3"
+          },
+          {
+            "name": "Profit Margin",
+            "expression": "DIVIDE([Profit],[Total Sales])",
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "f856494c-4c2f-4c45-bac3-b93cafdc63a5"
+          },
+          {
+            "name": "Sales YTD",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NG\"}"
+              }
+            ],
+            "expression": "TOTALYTD([Total Sales],'Date Table'[Date])",
+            "formatString": "\"₦\"#,0.###############;-\"₦\"#,0.###############;\"₦\"#,0.###############",
+            "lineageTag": "15aaaf59-a5f0-43c4-91d9-75d464c0baa4"
+          },
+          {
+            "name": "Same Period LY",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NG\"}"
+              }
+            ],
+            "expression": [
+              "CALCULATE([Total Sales],SAMEPERIODLASTYEAR('Date Table'[Date]))",
+              ""
+            ],
+            "formatString": "\"₦\"#,0.###############;-\"₦\"#,0.###############;\"₦\"#,0.###############",
+            "lineageTag": "586a8489-07f9-4f9b-8f17-25b4008e1e55"
+          },
+          {
+            "name": "Sales YOY",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NG\"}"
+              }
+            ],
+            "expression": "[Total Sales] - [Same Period LY]",
+            "formatString": "\"₦\"#,0.###############;-\"₦\"#,0.###############;\"₦\"#,0.###############",
+            "lineageTag": "4d57c1c1-46d7-4138-ae4b-994301bb7133"
+          },
+          {
+            "name": "Sales YOY %",
+            "expression": "DIVIDE([Sales YOY], [Same Period LY])",
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "d7579f8b-0dfe-48da-9ff7-92e29b3b908b"
+          },
+          {
+            "name": "Sales Last Month",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NG\"}"
+              }
+            ],
+            "expression": "CALCULATE([Total Sales], PARALLELPERIOD('Date Table'[Date], -1, MONTH))",
+            "formatString": "\"₦\"#,0.###############;-\"₦\"#,0.###############;\"₦\"#,0.###############",
+            "lineageTag": "2339be20-cb52-4e19-a521-6ec8e4065697"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Measures Table",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "",
+                "DATATABLE (",
+                "    \"Measure\", STRING,",
+                "    { { \"Measures\" } }",
+                ")"
+              ],
+              "type": "calculated"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
