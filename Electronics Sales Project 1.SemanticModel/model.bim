@@ -21,8 +21,31 @@
         "name": "en-US",
         "linguisticMetadata": {
           "content": {
+            "Entities": {
+              "sales_details.product_name": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Sales_Details",
+                    "ConceptualProperty": "Product Name"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Product": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              }
+            },
             "Language": "en-US",
-            "Version": "1.0.0"
+            "Version": "2.0.0"
           },
           "contentType": "json"
         }
@@ -267,6 +290,19 @@
             "lineageTag": "8db6c48e-ca6c-465f-965a-c3e3e25320b1",
             "sourceColumn": "COGS",
             "summarizeBy": "sum"
+          },
+          {
+            "name": "Column1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4cb08b2a-9151-493b-b28e-1d78f643854f",
+            "sourceColumn": "Column1",
+            "summarizeBy": "none"
           }
         ],
         "lineageTag": "3f83ffcf-49c5-474b-9cfa-3467550e03cb",
